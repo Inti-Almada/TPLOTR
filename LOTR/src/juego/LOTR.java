@@ -28,10 +28,10 @@ public class LOTR {
     public List<Reliquia> reliquias = new ArrayList<>();
 
     public void inicializarCatalogoPersonajes(){
-        Elfo elfo = new Elfo();
+        final Elfo elfo = new Elfo();
         Elfo.nombre = "Legolast";
 
-        Enano enano = new Enano();
+        final Enano enano = new Enano();
         Enano.nombre = "Gimli";
 
         Hobbit hobbit = new Hobbit();
@@ -41,7 +41,7 @@ public class LOTR {
         hobbit = new Hobbit();
         Hobbit.nombre = "Peregrim";
 
-        Humano humano = new Humano();
+        final Humano humano = new Humano();
         Humano.nombre = "Aragon";
 
         Wizard wizard = new Wizard();
@@ -49,20 +49,18 @@ public class LOTR {
         wizard = new Wizard();
         Wizard.nombre = "Saruman";
 
-        Trol trol = new Trol();
+        final Trol trol = new Trol();
         Trol.nombre = "Trol 1";
         
-        Orco orco = new Orco();
+        final Orco orco = new Orco();
         Orco.nombre = "Orco 1";
 
-        Goblin goblin = new Goblin();
+        final Goblin goblin = new Goblin();
         Goblin.nombre = "Goblin 1";
     }
 
         public void inicializarCatalogoArmas(){
-
-
-
-
+                
+     
 
 }

@@ -6,10 +6,9 @@ import armas.Arma;
 
 public class Personaje {
 
-    private String nombre;
-    private int salud;
-    private int stamina;
-    private Arma arma;
+    public String nombre;
+    public int salud;
+    public int stamina;
     public List<Arma> armas = new ArrayList<>();
     public Elfo elfo;
 
