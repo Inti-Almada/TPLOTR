@@ -3,11 +3,10 @@ package app;
 import juego.LOTR;
 import juego.players;
 
-public class App {
+public class App{
     public static void main(String[] args) throws Exception {
 
-        Players atacante;
-        Players atacado;
+       
 
 
         System.out.println();
@@ -34,19 +33,14 @@ public class App {
 
         System.out.println("¡Ataque!");
 
-        public App main (String []);
+    
 
         
 
         while (p1.getSalud () > 0 && p2.getSalud() > 0) {
-            Players atacante;
-            Players atacado;
+       
 
-                atacante = turnop1 ? p1 : p2;
-                atacado = turnop1 ? p2 : p1;
-
-            
     }
-
+    
     }
 }

@@ -9,6 +9,7 @@ public class Personaje {
     public String nombre;
     public int salud;
     public int stamina;
+    public Arma arma;
     public List<Arma> armas = new ArrayList<>();
     public Elfo elfo;
 
