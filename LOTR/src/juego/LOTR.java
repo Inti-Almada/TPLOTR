@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import armas.Arma;
+import personajes.Criatura;
 import personajes.Elfo;
 import personajes.Enano;
 import personajes.Goblin;
@@ -28,35 +29,48 @@ public class LOTR {
     public List<Reliquia> reliquias = new ArrayList<>();
 
     public void inicializarCatalogoPersonajes(){
-        final Elfo elfo = new Elfo();
-        Elfo.nombre = "Legolast";
+        Elfo elfo = new Elfo();
+        elfo.nombre = "Legolast";
+        elfo.salud = 100;
+        elfo.stamina = 50;
+        elfo.energiaMagica = 100;
 
-        final Enano enano = new Enano();
-        Enano.nombre = "Gimli";
+
+        Enano enano = new Enano();
+        enano.nombre = "Gimli";
+        enano.salud = 100;
+        enano.stamina = 100;
+
+
+
 
         Hobbit hobbit = new Hobbit();
-        Hobbit.nombre = "Frodo";
-        hobbit = new Hobbit();
-        Hobbit.nombre = "Sam";
-        hobbit = new Hobbit();
-        Hobbit.nombre = "Peregrim";
+        hobbit.nombre = "Frodo";
+        hobbit.salud = 100;
+        hobbit.stamina = 100;
 
-        final Humano humano = new Humano();
-        Humano.nombre = "Aragon";
+        hobbit = new Hobbit();
+        hobbit.nombre = "Sam";
+        hobbit = new Hobbit();
+        hobbit.nombre = "Peregrim";
+
+
+        Humano humano = new Humano();
+        humano.nombre = "Aragon";
 
         Wizard wizard = new Wizard();
-        Wizard.nombre = "Galdalf";
+        wizard.nombre = "Galdalf";
         wizard = new Wizard();
-        Wizard.nombre = "Saruman";
+        wizard.nombre = "Saruman";
 
-        final Trol trol = new Trol();
-        Trol.nombre = "Trol 1";
+        Trol trol = new Trol();
+        trol.nombre = "Trol 1";
         
-        final Orco orco = new Orco();
-        Orco.nombre = "Orco 1";
+        Orco orco = new Orco();
+        orco.nombre = "Orco 1";
 
-        final Goblin goblin = new Goblin();
-        Goblin.nombre = "Goblin 1";
+        Goblin goblin = new Goblin();
+        goblin.nombre = "Goblin 1";
     }
 
         public void inicializarCatalogoArmas(){

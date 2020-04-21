@@ -2,11 +2,15 @@ package app;
 
 import personajes.Personaje;
 
-public class Players extends Personaje {
+public class Players  {
+
+    private Personaje personaje;
+
+    public void atacar(){
+    this.personaje.atacar;
 
     
-    public void atacar(Players p1, Players p2, int danio){
-    p2.salud -= danio;
+
 
 }
 

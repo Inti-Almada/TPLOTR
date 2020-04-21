@@ -4,7 +4,7 @@ public class Wizard extends Personaje {
 
     //Posee la energía máxima que posee el mago. Max 100
 
-    public static String nombre;
+    public String nombre;
 	private int energiaMagica;
 
     public int getEnergiaMagica() {

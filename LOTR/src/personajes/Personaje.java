@@ -3,6 +3,7 @@ package personajes;
 import java.util.ArrayList;
 import java.util.List;
 import armas.Arma;
+import sun.awt.www.content.audio.basic;
 
 public class Personaje {
 
@@ -10,8 +11,16 @@ public class Personaje {
     public int salud;
     public int stamina;
     public Arma arma;
-    public List<Arma> armas = new ArrayList<>();
-    public Elfo elfo;
+    public Object atacar;;
+
+    public void atacar (Personaje personajes, Arma arma){
+        return true;
+        if Personaje estaVivo ;
+
+
+
+    }
+    public static List<Arma> armas = new ArrayList<>();
 
     public String getNombre() {
         return nombre;

@@ -6,7 +6,7 @@ public class Humano extends Personaje {
 
     //Reliquia que porta el humano
 
-    public static String nombre;
+    public String nombre;
 	private Reliquia reliquia;
 
     public Reliquia getReliquia() {

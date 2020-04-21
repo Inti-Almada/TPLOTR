@@ -6,8 +6,9 @@ public class Hobbit extends Criatura {
 
     //Reliquia que porta el hobbit
 
-    public static String nombre;
-	public Reliquia reliquia;
+    public String nombre;
+	public static Reliquia reliquia;
+	public Object reliquias;
 
 
 

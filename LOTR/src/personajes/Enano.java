@@ -1,7 +1,7 @@
 package personajes;
 
-public class Enano extends Criatura{
+public class Enano extends Personaje{
 
-	public static String nombre;
+	public String nombre;
 
 }

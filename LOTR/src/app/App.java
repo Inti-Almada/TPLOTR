@@ -23,7 +23,7 @@ public class App{
         p1.salud = 100;
 
 
-        Players p2 = new Players();
+        Player p2 = new Players();
 
         p2.nombre = "Aragon";
         p2.salud = 100;
