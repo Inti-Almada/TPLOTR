@@ -1,6 +1,6 @@
 package reliquias;
 
-public class Anillodepoder {
+public class Anillodepoder extends Reliquia {
 
 //Valor de la energía que gasta al personaje si ataca o es atacado
 

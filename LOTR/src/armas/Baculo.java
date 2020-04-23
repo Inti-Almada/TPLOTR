@@ -1,5 +1,9 @@
 package armas;
 
-public class Baculo {
+public class Baculo extends Arma  {
 
+    public Baculo (){
+        this.setDanio(40);
+
+    }
 }

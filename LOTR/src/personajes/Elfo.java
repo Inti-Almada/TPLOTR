@@ -1,8 +1,13 @@
 package personajes;
 
 import reliquias.Reliquia;
+import app.Ihacemagia;
+import app.Illevareliquia;
 
-public class Elfo extends Criatura {
+public class Elfo extends Criatura implements Ihacemagia, Illevareliquia{
+
+
+
 
     // Posee la energía máxima que posee el elfo. Max 100
 

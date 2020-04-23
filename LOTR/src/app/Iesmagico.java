@@ -1,4 +1,4 @@
-package juego;
+package app;
 
 public interface Iesmagico {
 

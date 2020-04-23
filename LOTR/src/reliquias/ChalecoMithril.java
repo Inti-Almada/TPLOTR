@@ -1,5 +1,5 @@
 package reliquias;
 
-public class ChalecoMithril {
+public class ChalecoMithril extends Reliquia {
 
 }

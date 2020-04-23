@@ -1,5 +1,10 @@
 package armas;
 
-public class HachaDoble {
+public class HachaDoble extends Arma {
+
+    public HachaDoble() {
+        this.setDanio(5);
+
+    }
 
 }

@@ -3,24 +3,18 @@ package personajes;
 import java.util.ArrayList;
 import java.util.List;
 import armas.Arma;
-import sun.awt.www.content.audio.basic;
 
 public class Personaje {
 
     public String nombre;
     public int salud;
     public int stamina;
-    public Arma arma;
-    public Object atacar;;
 
-    public void atacar (Personaje personajes, Arma arma){
-        return true;
-        if Personaje estaVivo ;
-
-
-
+    public void atacar(Personaje victima, Arma arma) {
+        victima.setSalud(victima.getSalud()-arma.getDanio());
     }
-    public static List<Arma> armas = new ArrayList<>();
+
+    public List<Arma> armas = new ArrayList<>();
 
     public String getNombre() {
         return nombre;
@@ -46,20 +40,5 @@ public class Personaje {
         this.stamina = stamina;
     }
 
-    public Arma getArma() {
-        return arma;
-    }
-
-    public void setArma(Arma arma) {
-        this.arma = arma;
-    }
-
    
-
-
-
-    }
-
-    
-
-
+}
