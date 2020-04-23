@@ -74,7 +74,7 @@ public class LOTR {
     }
 
         public void inicializarCatalogoArmas(){
-                
+        }         
      
 
 }
