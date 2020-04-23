@@ -41,9 +41,6 @@ public class LOTR {
         enano.salud = 100;
         enano.stamina = 100;
 
-
-
-
         Hobbit hobbit = new Hobbit();
         hobbit.nombre = "Frodo";
         hobbit.salud = 100;
@@ -74,6 +71,13 @@ public class LOTR {
     }
 
         public void inicializarCatalogoArmas(){
+            Elfo elfo = new Elfo();
+            elfo.nombre = "Legolast";
+            elfo.salud = 100;
+            elfo.stamina = 50;
+            elfo.energiaMagica = 100;
+
+
         }         
      
 
