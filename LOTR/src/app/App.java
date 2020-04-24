@@ -50,10 +50,11 @@ public class App {
                 victima = p1;
 
             }
-            System.out.println("Personaje " + atacante.getNombre() + "ataca");
+            System.out.println("Personaje " + atacante.getNombre() + " ataca");
             Arma armaelegida;
             armaelegida = elegirArma(atacante);
             
+
             atacante.atacar(victima, armaelegida);
             System.out.println("a " + victima.getNombre()+ " le queda "+ victima.getSalud());
             turnop1 = !turnop1;
