@@ -1,9 +1,6 @@
 package app;
 
 import java.util.*;
-
-import javax.lang.model.util.ElementScanner6;
-
 import armas.Arma;
 import personajes.Personaje;
 

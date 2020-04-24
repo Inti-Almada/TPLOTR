@@ -4,16 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 import armas.Arma;
 
+
 public class Personaje {
 
     public String nombre;
     public int salud;
     public int stamina;
+    public Arma arma;
+    public Object atacar;;
 
-    public void atacar(Personaje victima, Arma arma) {
-        victima.setSalud(victima.getSalud()-arma.getDanio());
+    public void atacar (Personaje personajes, Arma arma){
+        return true;
+        if Personaje estaVivo ;
+
+
+
     }
-
     public List<Arma> armas = new ArrayList<>();
 
     public String getNombre() {
@@ -40,5 +46,20 @@ public class Personaje {
         this.stamina = stamina;
     }
 
+    public Arma getArma() {
+        return arma;
+    }
+
+    public void setArma(Arma arma) {
+        this.arma = arma;
+    }
+
    
-}
+
+
+
+    }
+
+    
+
+
