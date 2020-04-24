@@ -49,27 +49,6 @@ public class LOTR {
         elfo.setReliquia (new AnillodeElfo());
         personajes.add(elfo);
 
-        
-        Wizard wizard = new Wizard();
-        wizard.nombre = "Galdalf";
-        wizard.salud = 100;
-        wizard.stamina = 100;
-        wizard.energiaMagica = 100;
-        espada = new Espada();
-        Baculo baculo = new Baculo();
-        Sting sting = new Sting();
-        personajes.add(wizard);
-
-        
-        wizard = new Wizard();
-        wizard.nombre = "Saruman";
-        wizard.salud = 100;
-        wizard.stamina = 100;
-        wizard.energiaMagica = 100;
-        espada = new Espada();
-        baculo = new Baculo();
-        sting = new Sting();
-        
 
 
 
@@ -92,7 +71,7 @@ public class LOTR {
         hobbit.stamina = 100;
         hachaDoble = new HachaDoble();
         hobbit.armas.add(hachaDoble);
-        baculo = new Baculo();
+        Baculo baculo = new Baculo();
         hobbit.armas.add (baculo);
         personajes.add(hobbit);
         hobbit.setReliquia (new Reliquia());
@@ -102,7 +81,7 @@ public class LOTR {
         hobbit.nombre = "Sam";
         hobbit.salud = 100;
         hobbit.stamina = 100;
-        sting = new Sting();
+        Sting sting = new Sting();
         hobbit.armas.add(hachaDoble);
         baculo = new Baculo();
         hobbit.armas.add (baculo);
@@ -128,6 +107,26 @@ public class LOTR {
         hachaDoble = new HachaDoble();
         baculo = new Baculo();
         humano.setReliquia (new Reliquia());
+
+
+        Wizard wizard = new Wizard();
+        wizard.nombre = "Galdalf";
+        wizard.salud = 100;
+        wizard.stamina = 100;
+        espada = new Espada();
+        baculo = new Baculo();
+        sting = new Sting();
+        wizard.setEnergiaMagica(100);
+        
+
+        wizard = new Wizard();
+        wizard.nombre = "Saruman";
+        wizard.salud = 100;
+        wizard.stamina = 100;
+        espada = new Espada();
+        baculo = new Baculo();
+        sting = new Sting();
+        wizard.setEnergiaMagica(100);
 
 
         Trol trol = new Trol();

@@ -14,9 +14,7 @@ public class Personaje {
     public Object atacar;;
 
     public void atacar (Personaje personajes, Arma arma){
-        return true;
-        if Personaje estaVivo ;
-
+       
 
 
     }
