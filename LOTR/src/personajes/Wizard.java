@@ -1,11 +1,13 @@
 package personajes;
 
-public class Wizard extends Personaje {
+import app.Ihacemagia;
+
+public class Wizard extends Personaje implements Ihacemagia {
 
     //Posee la energía máxima que posee el mago. Max 100
 
     public String nombre;
-	private int energiaMagica;
+	public int energiaMagica;
 
     public int getEnergiaMagica() {
         return energiaMagica;
