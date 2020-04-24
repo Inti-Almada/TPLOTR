@@ -20,6 +20,7 @@ import reliquias.ChalecoMithril;
 import reliquias.Reliquia;
 import armas.Espada;
 import armas.HachaDoble;
+import armas.Baculo;
 
 public class LOTR {
 
@@ -69,6 +70,16 @@ public class LOTR {
         hobbit.nombre = "Frodo";
         hobbit.salud = 100;
         hobbit.stamina = 100;
+        HachaDoble hachaDoble = new HachaDoble();
+        hobbit.armas.add(hachaDoble);
+        Baculo baculo = new Baculo();
+        hobbit.armas.add (baculo);
+        personajes.add(hobbit);
+        hobbit.setReliquia (new Reliquia());
+
+
+
+
 
         hobbit = new Hobbit();
         hobbit.nombre = "Sam";
