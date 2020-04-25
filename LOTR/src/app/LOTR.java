@@ -20,6 +20,7 @@ import reliquias.ChalecoMithril;
 import reliquias.Reliquia;
 import armas.Espada;
 import armas.HachaDoble;
+import armas.Sting;
 import armas.Baculo;
 
 public class LOTR {
