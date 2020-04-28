@@ -1,6 +1,7 @@
 package app;
 
 import personajes.Wizard;
+import armas.Arma;
 import personajes.Elfo;
 
 public interface Ihacemagia {

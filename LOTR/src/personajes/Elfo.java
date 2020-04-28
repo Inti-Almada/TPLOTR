@@ -1,9 +1,9 @@
 package personajes;
 
 import reliquias.Reliquia;
-import app.Arma;
 import app.Ihacemagia;
 import app.Illevareliquia;
+import armas.Arma;
 
 public class Elfo extends Criatura implements Ihacemagia, Illevareliquia {
 

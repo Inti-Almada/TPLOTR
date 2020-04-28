@@ -45,12 +45,9 @@ public class LOTR {
         ArcoyFlecha arcoyFlecha = new ArcoyFlecha();
         elfo.armas.add(arcoyFlecha);
         Espada espada = new Espada();
-        elfo.armas.add (espada);
-        elfo.setReliquia (new AnillodeElfo());
+        elfo.armas.add(espada);
+        elfo.setReliquia(new AnillodeElfo());
         personajes.add(elfo);
-
-
-
 
         Enano enano = new Enano();
         enano.nombre = "Gimli";
@@ -59,10 +56,9 @@ public class LOTR {
         HachaDoble hachaDoble = new HachaDoble();
         enano.armas.add(hachaDoble);
         espada = new Espada();
-        enano.armas.add (espada);
+        enano.armas.add(espada);
         personajes.add(enano);
-        enano.setReliquia (new ChalecoMithril());
-
+        enano.setReliquia(new ChalecoMithril());
 
         Hobbit hobbit = new Hobbit();
         hobbit.nombre = "Frodo";
@@ -71,10 +67,9 @@ public class LOTR {
         hachaDoble = new HachaDoble();
         hobbit.armas.add(hachaDoble);
         Baculo baculo = new Baculo();
-        hobbit.armas.add (baculo);
+        hobbit.armas.add(baculo);
         personajes.add(hobbit);
-        hobbit.setReliquia (new Reliquia());
-
+        hobbit.setReliquia(new Reliquia());
 
         hobbit = new Hobbit();
         hobbit.nombre = "Sam";
@@ -83,10 +78,10 @@ public class LOTR {
         Sting sting = new Sting();
         hobbit.armas.add(sting);
         baculo = new Baculo();
-        hobbit.armas.add (baculo);
+        hobbit.armas.add(baculo);
         personajes.add(hobbit);
-        hobbit.setReliquia (new Reliquia());
-        
+        hobbit.setReliquia(new Reliquia());
+
         hobbit = new Hobbit();
         hobbit.nombre = "Peregrim";
         hobbit.salud = 100;
@@ -94,9 +89,9 @@ public class LOTR {
         hachaDoble = new HachaDoble();
         hobbit.armas.add(hachaDoble);
         baculo = new Baculo();
-        hobbit.armas.add (baculo);
+        hobbit.armas.add(baculo);
         personajes.add(hobbit);
-        hobbit.setReliquia (new Reliquia());
+        hobbit.setReliquia(new Reliquia());
 
         Humano humano = new Humano();
         humano.nombre = "Aragon";
@@ -104,11 +99,10 @@ public class LOTR {
         humano.stamina = 100;
         hachaDoble = new HachaDoble();
         humano.armas.add(hachaDoble);
-        espada= new Espada();
-        humano.armas.add (espada);
+        espada = new Espada();
+        humano.armas.add(espada);
         personajes.add(humano);
-        humano.setReliquia (new Reliquia());
-
+        humano.setReliquia(new Reliquia());
 
         Wizard wizard = new Wizard();
         wizard.nombre = "Galdalf";
@@ -118,44 +112,9 @@ public class LOTR {
         wizard.setEnergiaMagica(100);
         hachaDoble = new HachaDoble();
         wizard.armas.add(hachaDoble);
-        espada= new Espada();
-        wizard.armas.add (espada);
+        espada = new Espada();
+        wizard.armas.add(espada);
         personajes.add(wizard);
-        
-
-        Trol trol = new Trol();
-        trol.nombre = "Trol";
-        trol.salud = 150;
-        trol.stamina = 100;
-        espada= new Espada();
-        trol.armas.add (espada);
-        Sting sting = new Sting();
-        trol.armas.add(sting);
-        personajes.add(trol);
-
-        Orco orco = new Orco();
-        orco.nombre = "Orco";
-        orco.salud = 150;
-        orco.stamina = 100;
-        espada= new Espada();
-        orco.armas.add (espada);
-        sting = new Sting();
-        orco.armas.add(sting);
-        personajes.add(orco);
-
-
-        Goblin goblin = new Goblin();
-        goblin.nombre = "Goblin";
-        goblin.salud = 150;
-        goblin.stamina = 100;
-        hachaDoble= new HachaDoble();
-        goblin.armas.add (hachaDoble);
-        sting = new Sting();
-        goblin.armas.add(sting);
-        personajes.add(goblin);
-        
-
-        
 
         wizard = new Wizard();
         wizard.nombre = "Saruman";
@@ -166,13 +125,12 @@ public class LOTR {
         sting = new Sting();
         wizard.setEnergiaMagica(100);
 
-
         Trol trol = new Trol();
         trol.nombre = "Trol 1";
         trol.salud = 150;
         trol.stamina = 100;
         trol.armas.add(hachaDoble);
-        trol.armas.add (espada);
+        trol.armas.add(espada);
         hachaDoble = new HachaDoble();
         espada = new Espada();
         personajes.add(trol);
@@ -182,7 +140,7 @@ public class LOTR {
         orco.salud = 200;
         orco.stamina = 100;
         orco.armas.add(hachaDoble);
-        orco.armas.add (espada);
+        orco.armas.add(espada);
         hachaDoble = new HachaDoble();
         espada = new Espada();
         personajes.add(orco);
@@ -192,7 +150,7 @@ public class LOTR {
         goblin.salud = 200;
         goblin.stamina = 100;
         goblin.armas.add(hachaDoble);
-        goblin.armas.add (espada);
+        goblin.armas.add(espada);
         hachaDoble = new HachaDoble();
         espada = new Espada();
         personajes.add(goblin);

@@ -1,7 +1,7 @@
 package personajes;
 
-import app.Arma;
 import app.Ihacemagia;
+import armas.Arma;
 
 public class Wizard extends Personaje implements Ihacemagia {
 
