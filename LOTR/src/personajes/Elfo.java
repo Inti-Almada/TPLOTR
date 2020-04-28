@@ -1,21 +1,16 @@
 package personajes;
 
 import reliquias.Reliquia;
+import app.Arma;
 import app.Ihacemagia;
 import app.Illevareliquia;
 
-public class Elfo extends Criatura implements Ihacemagia, Illevareliquia{
-
-
-
+public class Elfo extends Criatura implements Ihacemagia, Illevareliquia {
 
     // Posee la energía máxima que posee el elfo. Max 100
 
-    
     public int energiaMagica;
     public int stamina;
-    
-
 
     public int getEnergiaMagica() {
         return energiaMagica;
@@ -33,6 +28,17 @@ public class Elfo extends Criatura implements Ihacemagia, Illevareliquia{
 
     public void setReliquia(Reliquia reliquia) {
         this.reliquia = reliquia;
+    }
+
+    @Override
+    public boolean puedoEjecutarAtaqueEpico() {
+    
+        return false;
+    }
+
+    @Override
+    public void ataqueEpico(Elfo elfo, Wizard wizard, Arma arma) {
+
     }
 
 }

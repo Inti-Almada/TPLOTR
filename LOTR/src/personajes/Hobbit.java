@@ -13,13 +13,11 @@ public class Hobbit extends Criatura  implements Illevareliquia{
 
     @Override
     public Reliquia getReliquia() {
-        
         return null;
     }
 
     @Override
     public void setReliquia(Reliquia reliquia) {
-        
 
     }
 
