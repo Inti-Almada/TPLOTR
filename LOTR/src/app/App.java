@@ -17,16 +17,36 @@ public class App {
 
         miLOTR.inicializarCatalogoPersonajes();
 
-        System.out.println("Seleccion p1");
+        System.out.println("Seleccion personaje 1");
 
-        // Aca imprimir las opciones de los personajes
+        System.out.println("**** 01 - Legolast ****");
+        System.out.println("**** 02 - Gimli *******");
+        System.out.println("**** 03 - Frodo *******");
+        System.out.println("**** 04 - Sam *********");
+        System.out.println("**** 05 - Peregrim ****");
+        System.out.println("**** 06 - Aragon ******");
+        System.out.println("**** 07 - Gandalf *****");
+        System.out.println("**** 08 - Saruman *****");
+        System.out.println("**** 09 - Trol ********");
+        System.out.println("**** 10 - Orco ********");
+        System.out.println("**** 11 - Goblim ******");
 
         int p1n;
         p1n = Teclado.nextInt();
 
-        System.out.println("Seleccion p2");
+        System.out.println("Seleccion personaje 2");
 
-        // Aca imprimir las opciones de los personajes spokify
+        System.out.println("**** 01 - Legolast ****");
+        System.out.println("**** 02 - Gimli *******");
+        System.out.println("**** 03 - Frodo *******");
+        System.out.println("**** 04 - Sam *********");
+        System.out.println("**** 05 - Peregrim ****");
+        System.out.println("**** 06 - Aragon ******");
+        System.out.println("**** 07 - Gandalf *****");
+        System.out.println("**** 08 - Saruman *****");
+        System.out.println("**** 09 - Trol ********");
+        System.out.println("**** 10 - Orco ********");
+        System.out.println("**** 11 - Goblim ******");
 
         int p2n;
         p2n = Teclado.nextInt();
@@ -61,9 +81,9 @@ public class App {
 
         }
         if (p1.getSalud() > 0) {
-            System.out.println("Ganó p1");
+            System.out.println("Ganó personaje 1");
         } else {
-            System.out.println("Ganó p2");
+            System.out.println("Ganó personaje 2");
         }
     }
 

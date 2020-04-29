@@ -108,7 +108,6 @@ public class LOTR {
         wizard.nombre = "Galdalf";
         wizard.salud = 100;
         wizard.stamina = 100;
-
         wizard.setEnergiaMagica(100);
         hachaDoble = new HachaDoble();
         wizard.armas.add(hachaDoble);
@@ -126,7 +125,7 @@ public class LOTR {
         wizard.setEnergiaMagica(100);
 
         Trol trol = new Trol();
-        trol.nombre = "Trol 1";
+        trol.nombre = "Trol";
         trol.salud = 150;
         trol.stamina = 100;
         trol.armas.add(hachaDoble);
@@ -136,7 +135,7 @@ public class LOTR {
         personajes.add(trol);
 
         Orco orco = new Orco();
-        orco.nombre = "Orco 1";
+        orco.nombre = "Orco";
         orco.salud = 200;
         orco.stamina = 100;
         orco.armas.add(hachaDoble);
@@ -146,7 +145,7 @@ public class LOTR {
         personajes.add(orco);
 
         Goblin goblin = new Goblin();
-        goblin.nombre = "Goblin 1";
+        goblin.nombre = "Goblin";
         goblin.salud = 200;
         goblin.stamina = 100;
         goblin.armas.add(hachaDoble);
