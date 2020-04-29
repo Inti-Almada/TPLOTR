@@ -49,6 +49,7 @@ public class LOTR {
         elfo.setReliquia(new AnillodeElfo());
         personajes.add(elfo);
 
+
         Enano enano = new Enano();
         enano.nombre = "Gimli";
         enano.salud = 100;
@@ -104,7 +105,7 @@ public class LOTR {
         personajes.add(humano);
         humano.setReliquia(new Reliquia());
 
-        Wizard wizard = new Wizard();
+       Wizard wizard = new Wizard();
         wizard.nombre = "Galdalf";
         wizard.salud = 100;
         wizard.stamina = 100;

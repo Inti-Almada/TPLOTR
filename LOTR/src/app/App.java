@@ -71,12 +71,13 @@ public class App {
 
             }
             System.out.println("Personaje " + atacante.getNombre() + " ataca");
-            Arma armaelegida;
-            armaelegida = elegirArma(atacante);
-            
+            Arma armaelegida = elegirArma(atacante);
+
+
+            System.out.println(atacante.getNombre() +" elegió "+ armaelegida);
 
             atacante.atacar(victima, armaelegida);
-            System.out.println("a " + victima.getNombre()+ " le queda "+ victima.getSalud());
+            System.out.println("a " + victima.getNombre() + " le queda " + victima.getSalud());
             turnop1 = !turnop1;
 
         }
@@ -89,8 +90,8 @@ public class App {
 
     public static Arma elegirArma(Personaje personaje) {
         System.out.println("Elija el arma 1 o el arma 2");
-        int idarma;
-        idarma = Teclado.nextInt();
+        int idarma = Teclado.nextInt();
+
         return personaje.armas.get(idarma - 1);
 
     }
