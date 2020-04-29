@@ -120,9 +120,11 @@ public class LOTR {
         wizard.salud = 100;
         wizard.stamina = 100;
         espada = new Espada();
+        wizard.armas.add(espada);
         baculo = new Baculo();
-        sting = new Sting();
+        wizard.armas.add(baculo);
         wizard.setEnergiaMagica(100);
+        personajes.add(wizard);
 
         Trol trol = new Trol();
         trol.nombre = "Trol";
