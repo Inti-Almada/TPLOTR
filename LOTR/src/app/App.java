@@ -72,13 +72,6 @@ public class App {
 
             }
 
-            /*
-             * for( p1.getStamina() <= 10 && p2.getStamina() <=10 ) {
-             * 
-             * System.out.println("ataque epico!!!!!");
-             * 
-             * if (victima) {}
-             */
             System.out.println("Personaje " + atacante.getNombre() + " ataca");
             Arma armaelegida = elegirArma(atacante);
 

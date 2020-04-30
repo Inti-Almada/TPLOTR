@@ -27,7 +27,14 @@ public class Wizard extends Personaje implements Ihacemagia {
     }
 
     @Override
-    public void ataqueEpico(Personaje pdersonaje, Arma arma) {
+    public void ataqueEpico(Personaje personaje, Arma arma) {
+
+            
+        personaje.setSalud(personaje.getSalud() - arma.getDanio() * 3);
+
+        this.setStamina(0);
+
+        this.setEnergiaMagica(0);
 
     }
 

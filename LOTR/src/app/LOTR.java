@@ -39,7 +39,7 @@ public class LOTR {
         Elfo elfo = new Elfo();
         elfo.nombre = "Legolast";
         elfo.salud = 100;
-        elfo.stamina = 50;
+        elfo.stamina = 100;
         elfo.energiaMagica = 100;
         ArcoyFlecha arcoyFlecha = new ArcoyFlecha();
         elfo.armas.add(arcoyFlecha);
@@ -106,7 +106,7 @@ public class LOTR {
         Wizard wizard = new Wizard();
         wizard.nombre = "Galdalf";
         wizard.salud = 100;
-        wizard.stamina = 100;
+        wizard.stamina = 120;
         wizard.setEnergiaMagica(100);
         hachaDoble = new HachaDoble();
         wizard.armas.add(hachaDoble);
@@ -117,7 +117,7 @@ public class LOTR {
         wizard = new Wizard();
         wizard.nombre = "Saruman";
         wizard.salud = 100;
-        wizard.stamina = 100;
+        wizard.stamina =120;
         espada = new Espada();
         wizard.armas.add(espada);
         baculo = new Baculo();
@@ -147,7 +147,7 @@ public class LOTR {
 
         Goblin goblin = new Goblin();
         goblin.nombre = "Goblin";
-        goblin.salud = 200;
+        goblin.salud = 100;
         goblin.stamina = 100;
         goblin.armas.add(hachaDoble);
         goblin.armas.add(espada);
