@@ -113,6 +113,7 @@ public class LOTR {
         espada = new Espada();
         wizard.armas.add(espada);
         personajes.add(wizard);
+        
 
         wizard = new Wizard();
         wizard.nombre = "Saruman";
@@ -128,7 +129,7 @@ public class LOTR {
         Trol trol = new Trol();
         trol.nombre = "Trol";
         trol.salud = 100;
-        trol.stamina = 150;
+        trol.stamina = 110;
         trol.armas.add(hachaDoble);
         trol.armas.add(espada);
         hachaDoble = new HachaDoble();
