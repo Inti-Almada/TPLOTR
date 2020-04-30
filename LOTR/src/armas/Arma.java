@@ -7,7 +7,8 @@ public class Arma {
 
     private String nombre;
     private int danio;
-  
+    private int stamina;
+    
 
     public String getNombre() {
         return nombre;
@@ -23,6 +24,14 @@ public class Arma {
 
     public void setDanio(int danio) {
         this.danio = danio;
+    }
+
+    public int getStamina() {
+        return stamina;
+    }
+
+    public void setStamina(int stamina) {
+        this.stamina = stamina;
     }
 
    

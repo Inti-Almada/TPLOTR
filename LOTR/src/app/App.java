@@ -1,6 +1,7 @@
 package app;
 
-import java.util.*;
+import java.util.Scanner;
+
 import armas.Arma;
 import personajes.Personaje;
 
@@ -13,11 +14,11 @@ public class App {
 
         LOTR miLOTR = new LOTR();
 
-        System.out.println("Iniciando Catalogo");
+        System.out.println("elige del Catalogo a tu personaje");
 
         miLOTR.inicializarCatalogoPersonajes();
 
-        System.out.println("Seleccion personaje 1");
+        System.out.println("Selecciona tu personaje 1");
 
         System.out.println("**** 01 - Legolast ****");
         System.out.println("**** 02 - Gimli *******");
@@ -58,7 +59,7 @@ public class App {
 
         System.out.println("¡Ataque!");
 
-        while (p1.getSalud() > 0 && p2.getSalud() > 0) {
+        while ((p1.getSalud() >= 0 && p2.getSalud() >= 0)) {
             Personaje atacante;
             Personaje victima;
             if (turnop1) {
@@ -70,21 +71,51 @@ public class App {
                 victima = p1;
 
             }
+
+            /*
+             * for( p1.getStamina() <= 10 && p2.getStamina() <=10 ) {
+             * 
+             * System.out.println("ataque epico!!!!!");
+             * 
+             * if (victima) {}
+             */
             System.out.println("Personaje " + atacante.getNombre() + " ataca");
             Arma armaelegida = elegirArma(atacante);
 
+            System.out.println(atacante.getNombre() + " elegió " + armaelegida);
+            boolean fueAtaqueEpico = false;
+            if (atacante.getStamina() >= armaelegida.getStamina()) {
 
-            System.out.println(atacante.getNombre() +" elegió "+ armaelegida);
-
-            atacante.atacar(victima, armaelegida);
-            System.out.println("a " + victima.getNombre() + " le queda " + victima.getSalud());
+                if (atacante instanceof Ihacemagia) {
+                    Ihacemagia magico = (Ihacemagia) atacante;
+                    if (magico.puedoEjecutarAtaqueEpico()) {
+                        fueAtaqueEpico = true;
+                        magico.ataqueEpico(victima, armaelegida);
+                    } else {
+                        atacante.atacar(victima, armaelegida);
+                    }
+                } else
+                    atacante.atacar(victima, armaelegida);
+                if (fueAtaqueEpico)
+                    System.out.println("fue ataque epico");
+                System.out.println("Oh no! a " + victima.getNombre() + " le queda " + victima.getSalud()
+                        + " puntos de salud" + "tiene de stamina" + victima.getStamina());
+            } else {
+                System.out.println("no puede atacar");
+            }
             turnop1 = !turnop1;
 
         }
-        if (p1.getSalud() > 0) {
-            System.out.println("Ganó personaje 1");
+
+        if (p1.getSalud() >= 0 && p1.getStamina() <= 10) {
+
+            if (p1.puedeEjecutarAtaqueEpico())
+                ;
+            System.out.println("Esto es un manso ataque epico!!!");
+
+            System.out.println("Felicitaciones!Ganó personaje 1");
         } else {
-            System.out.println("Ganó personaje 2");
+            System.out.println("Excelente! Ganó personaje 2");
         }
     }
 

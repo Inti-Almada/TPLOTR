@@ -7,6 +7,7 @@ public class Anduril extends Espada{
     //cargar atributos en cada arma
     public Anduril (){
         this.setDanio(20);
+        this.setStamina(5);
 
     }
 

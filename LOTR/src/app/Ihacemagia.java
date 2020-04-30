@@ -3,6 +3,7 @@ package app;
 import personajes.Wizard;
 import armas.Arma;
 import personajes.Elfo;
+import personajes.Personaje;
 
 public interface Ihacemagia {
 
@@ -11,7 +12,7 @@ public interface Ihacemagia {
     int getEnergiaMagica(); 
     void setEnergiaMagica(int energiaMagica); 
     boolean puedoEjecutarAtaqueEpico();
-    void ataqueEpico(Elfo elfo, Wizard wizard, Arma arma);
+    void ataqueEpico(Personaje personaje, Arma arma);
 
     
 

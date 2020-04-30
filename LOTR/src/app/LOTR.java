@@ -5,7 +5,10 @@ import java.util.List;
 
 import armas.ArcoyFlecha;
 import armas.Arma;
-import personajes.Criatura;
+import armas.Baculo;
+import armas.Espada;
+import armas.HachaDoble;
+import armas.Sting;
 import personajes.Elfo;
 import personajes.Enano;
 import personajes.Goblin;
@@ -18,10 +21,6 @@ import personajes.Wizard;
 import reliquias.AnillodeElfo;
 import reliquias.ChalecoMithril;
 import reliquias.Reliquia;
-import armas.Espada;
-import armas.HachaDoble;
-import armas.Sting;
-import armas.Baculo;
 
 public class LOTR {
 
@@ -48,7 +47,6 @@ public class LOTR {
         elfo.armas.add(espada);
         elfo.setReliquia(new AnillodeElfo());
         personajes.add(elfo);
-
 
         Enano enano = new Enano();
         enano.nombre = "Gimli";
@@ -105,7 +103,7 @@ public class LOTR {
         personajes.add(humano);
         humano.setReliquia(new Reliquia());
 
-       Wizard wizard = new Wizard();
+        Wizard wizard = new Wizard();
         wizard.nombre = "Galdalf";
         wizard.salud = 100;
         wizard.stamina = 100;
@@ -129,8 +127,8 @@ public class LOTR {
 
         Trol trol = new Trol();
         trol.nombre = "Trol";
-        trol.salud = 150;
-        trol.stamina = 100;
+        trol.salud = 100;
+        trol.stamina = 150;
         trol.armas.add(hachaDoble);
         trol.armas.add(espada);
         hachaDoble = new HachaDoble();
@@ -139,8 +137,8 @@ public class LOTR {
 
         Orco orco = new Orco();
         orco.nombre = "Orco";
-        orco.salud = 200;
-        orco.stamina = 100;
+        orco.salud = 100;
+        orco.stamina = 110;
         orco.armas.add(hachaDoble);
         orco.armas.add(espada);
         hachaDoble = new HachaDoble();

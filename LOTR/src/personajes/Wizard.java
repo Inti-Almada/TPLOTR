@@ -20,13 +20,14 @@ public class Wizard extends Personaje implements Ihacemagia {
 
     @Override
     public boolean puedoEjecutarAtaqueEpico() {
-    
+
+        if (this.getStamina() <= 10 && this.getEnergiaMagica() > 5)
+            return true;
         return false;
     }
 
     @Override
-    public void ataqueEpico(Elfo elfo, Wizard wizard, Arma arma) {
-    
+    public void ataqueEpico(Personaje pdersonaje, Arma arma) {
 
     }
 
@@ -37,6 +38,5 @@ public class Wizard extends Personaje implements Ihacemagia {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
 
 }

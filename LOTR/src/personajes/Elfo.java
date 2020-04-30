@@ -32,12 +32,18 @@ public class Elfo extends Criatura implements Ihacemagia, Illevareliquia {
 
     @Override
     public boolean puedoEjecutarAtaqueEpico() {
-    
+
         return false;
     }
 
     @Override
-    public void ataqueEpico(Elfo elfo, Wizard wizard, Arma arma) {
+    public void ataqueEpico(Personaje personaje, Arma arma) {
+
+        personaje.setSalud(personaje.getSalud() - arma.getDanio() * 2);
+
+        this.setStamina(0);
+
+        this.setEnergiaMagica(0);
 
     }
 

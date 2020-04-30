@@ -13,6 +13,9 @@ public class Personaje {
     public void atacar(Personaje personaje, Arma arma) {
 
         personaje.setSalud(personaje.getSalud() - arma.getDanio());
+
+        this.setStamina(this.getStamina() - arma.getStamina());
+
     }
 
     public List<Arma> armas = new ArrayList<>();
@@ -39,6 +42,10 @@ public class Personaje {
 
     public void setStamina(int stamina) {
         this.stamina = stamina;
+    }
+
+    public boolean puedeEjecutarAtaqueEpico() {
+        return false;
     }
 
 }

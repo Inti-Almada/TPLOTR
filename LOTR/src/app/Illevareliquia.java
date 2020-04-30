@@ -4,7 +4,8 @@ import reliquias.Reliquia;
 
 public interface Illevareliquia {
 
-    Reliquia getReliquia ();
-    void setReliquia (Reliquia reliquia);
-    
+    Reliquia getReliquia();
+
+    void setReliquia(Reliquia reliquia);
+
 }
