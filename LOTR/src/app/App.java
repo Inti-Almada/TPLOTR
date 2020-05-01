@@ -75,7 +75,7 @@ public class App {
             System.out.println("Personaje " + atacante.getNombre() + " ataca");
             Arma armaelegida = elegirArma(atacante);
 
-            System.out.println(atacante.getNombre() +  "elegió " + armaelegida.getNombre());
+            System.out.println(atacante.getNombre() +  " elegió " + armaelegida);
             boolean fueAtaqueEpico = false;
             if (atacante.getStamina() >= armaelegida.getStamina()) {
 
