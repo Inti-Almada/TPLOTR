@@ -48,4 +48,8 @@ public class Personaje {
         return false;
     }
 
+	public int getEnergiaMagica() {
+		return 0;
+	}
+
 }

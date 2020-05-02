@@ -3,8 +3,9 @@ package armas;
 public class Baculo extends Arma  {
 
     public Baculo (){
-        this.setDanio(40);
-        this.setStamina(20);
+        this.setDanio(13);
+        this.setStamina(13);
+        this.setNombre("Baculo");
 
     }
 }

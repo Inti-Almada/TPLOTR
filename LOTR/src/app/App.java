@@ -59,6 +59,9 @@ public class App {
 
         System.out.println("¡Ataque!");
 
+        boolean p1SinFuerza = false;
+        boolean p2SinFuerza = false;
+
         while ((p1.getSalud() >= 0 && p2.getSalud() >= 0)) {
             Personaje atacante;
             Personaje victima;
@@ -75,12 +78,16 @@ public class App {
             System.out.println("Personaje " + atacante.getNombre() + " ataca");
             Arma armaelegida = elegirArma(atacante);
 
-            System.out.println(atacante.getNombre() +  " elegió " + armaelegida);
+            System.out.println(atacante.getNombre() + " eligió " + armaelegida.getNombre());
             boolean fueAtaqueEpico = false;
+            
+
             if (atacante.getStamina() >= armaelegida.getStamina()) {
 
                 if (atacante instanceof Ihacemagia) {
+
                     Ihacemagia magico = (Ihacemagia) atacante;
+
                     if (magico.puedoEjecutarAtaqueEpico()) {
                         fueAtaqueEpico = true;
                         magico.ataqueEpico(victima, armaelegida);
@@ -92,32 +99,39 @@ public class App {
                 if (fueAtaqueEpico)
                     System.out.println("fue ataque epico");
                 System.out.println("Oh no! a " + victima.getNombre() + " le queda " + victima.getSalud()
-                        + " puntos de salud " + " tiene de stamina " + victima.getStamina());
+                        + " puntos de salud " + " y tiene " + victima.getStamina() + " de stamina ");
             } else {
+                if (!p1SinFuerza)
+                    p1SinFuerza = atacante.equals(p1);
+                if (!p2SinFuerza)
+                    p2SinFuerza = atacante.equals(p2);
+
                 System.out.println("no puede atacar");
+
             }
             turnop1 = !turnop1;
 
+            if (p1SinFuerza && p2SinFuerza)
+                break;
         }
 
-        if (p1.getSalud() >= 0 && p1.getStamina() <= 10) {
-
-            if (p1.puedeEjecutarAtaqueEpico())
-                ;
-            System.out.println("Esto es un manso ataque epico!!!");
+        if (p1.getSalud() > 0 && p1.getStamina() > 0) {
 
             System.out.println("Felicitaciones!Ganó personaje 1");
-        } else {
+        } else if (p2.getSalud() > 0 && p2.getStamina() > 0) {
             System.out.println("Excelente! Ganó personaje 2");
+        } else {
+            System.out.println("empate!");
         }
+
     }
 
     public static Arma elegirArma(Personaje personaje) {
-        System.out.println("Elija el arma 1 o el arma 2");
+
+        System.out.println("Elija el arma 1 o 2 de tu personaje " + personaje.armas);
+
         int idarma = Teclado.nextInt();
 
         return personaje.armas.get(idarma - 1);
-
     }
-
 }

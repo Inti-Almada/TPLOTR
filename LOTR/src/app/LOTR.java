@@ -104,10 +104,10 @@ public class LOTR {
         humano.setReliquia(new Reliquia());
 
         Wizard wizard = new Wizard();
-        wizard.nombre = "Galdalf";
+        wizard.nombre = "Gandalf";
         wizard.salud = 100;
-        wizard.stamina = 120;
-        wizard.setEnergiaMagica(100);
+        wizard.stamina = 100;
+        wizard.energiaMagica = 100;
         hachaDoble = new HachaDoble();
         wizard.armas.add(hachaDoble);
         espada = new Espada();
@@ -118,13 +118,14 @@ public class LOTR {
         wizard = new Wizard();
         wizard.nombre = "Saruman";
         wizard.salud = 100;
-        wizard.stamina =120;
+        wizard.stamina = 100;
+        wizard.energiaMagica = 100;
         espada = new Espada();
         wizard.armas.add(espada);
         baculo = new Baculo();
         wizard.armas.add(baculo);
-        wizard.setEnergiaMagica(100);
-        personajes.add(wizard);
+       personajes.add(wizard);
+        
 
         Trol trol = new Trol();
         trol.nombre = "Trol";

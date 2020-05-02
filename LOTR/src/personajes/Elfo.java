@@ -33,7 +33,11 @@ public class Elfo extends Criatura implements Ihacemagia, Illevareliquia {
     @Override
     public boolean puedoEjecutarAtaqueEpico() {
 
-        return false;
+         if ( this.getSalud() >= 20 && this.getStamina() <= 10 ) 
+          /* en lugar de getSalud deberia ir getenergiaMagica pero al no haber hecho las reliquias el otro parametro que usaremos para que la condicion se cumpla sera salud en un futuro cuando lo terminemos se cambiara la condicion para que se cumpla el ataque epico*/
+        
+            return true;
+         return false; 
     }
 
     @Override
@@ -45,6 +49,16 @@ public class Elfo extends Criatura implements Ihacemagia, Illevareliquia {
 
         this.setEnergiaMagica(0);
 
+    
+
+    }
+
+    public int getStamina() {
+        return stamina;
+    }
+
+    public void setStamina(int stamina) {
+        this.stamina = stamina;
     }
 
 }

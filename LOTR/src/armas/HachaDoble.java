@@ -3,8 +3,9 @@ package armas;
 public class HachaDoble extends Arma {
 
     public HachaDoble() {
-        this.setDanio(5);
-        this.setStamina(20);
+        this.setDanio(11);
+        this.setStamina(13);
+        this.setNombre("Hacha Doble");
     }
 
 }
